@@ -131,11 +131,11 @@ namespace DMS.Controllers
             ViewBag.Message = "Your contact page.";
             return View();
         }
-
-        public async Task<ActionResult> Dashboard()
+        public ActionResult dashboard()
         {
-            return RedirectToAction("Index");
+            return View();
         }
+       
 
     }
 }

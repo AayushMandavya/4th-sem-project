@@ -1,4 +1,8 @@
-﻿<div class="page-header" style="background: url(assets/img/banner1.jpg);">
+﻿@{
+    Layout = "~/Views/Shared/_PageLayout.cshtml";
+}
+
+<div class="page-header" style="background: url(/content/mainproject/assets/img/banner1.jpg);">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -23,7 +27,7 @@
                     <div class="sidebar-box">
                         <div class="user">
                             <figure>
-                                <a href="#"><img src="assets/img/author/img1.jpg" alt=""></a>
+                                <a href="#"><img src="~/content/mainproject/assets/img/author/img1.jpg" alt=""></a>
                             </figure>
                             <div class="usercontent">
                                 <h3>Hello William!</h3>
@@ -33,43 +37,43 @@
                         <nav class="navdashboard">
                             <ul>
                                 <li>
-                                    <a class="active" href="dashboard.html">
+                                    <a class="active" href="@Url.Action("dashboard","Home")">
                                         <i class="lni-dashboard"></i>
                                         <span>Dashboard</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="account-profile-setting.html">
+                                    <a href="@Url.Action("accprofilesetting","Home")">
                                         <i class="lni-cog"></i>
                                         <span>Profile Settings</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="account-myads.html">
+                                    <a href="@Url.Action("accmyads","Home")">
                                         <i class="lni-layers"></i>
                                         <span>My Ads</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="offermessages.html">
+                                    <a href="@Url.Action("offermessages","Home")">
                                         <i class="lni-envelope"></i>
                                         <span>Offers/Messages</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="payments.html">
+                                    <a href="@Url.Action("payments","Home")">
                                         <i class="lni-wallet"></i>
                                         <span>Payments</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="account-favourite-ads.html">
+                                    <a href="@Url.Action("accfavads","Home")">
                                         <i class="lni-heart"></i>
                                         <span>My Favourites</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="privacy-setting.html">
+                                    <a href="@Url.Action("privacysetting","Home")">
                                         <i class="lni-star"></i>
                                         <span>Privacy Settings</span>
                                     </a>
@@ -86,7 +90,7 @@
                     <div class="widget">
                         <h4 class="widget-title">Advertisement</h4>
                         <div class="add-box">
-                            <img class="img-fluid" src="assets/img/img1.jpg" alt="">
+                            <img class="img-fluid" src="~/content/mainproject/assets/img/img1.jpg" alt="">
                         </div>
                     </div>
                 </aside>
@@ -154,7 +158,7 @@
                                                 <label class="custom-control-label" for="adone"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img1.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img1.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>HP Laptop 6560b core i3 3nd generation</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -179,7 +183,7 @@
                                                 <label class="custom-control-label" for="adtwo"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img2.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img2.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Jvc Haebr80b In-ear Sports Headphones</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -204,7 +208,7 @@
                                                 <label class="custom-control-label" for="adthree"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img3.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img3.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Furniture Straps 4-Pack, TV Anti-Tip Metal Wall </h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -231,7 +235,7 @@
                                                 <label class="custom-control-label" for="adfour"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img4.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img4.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Apple iPhone X, Fully Unlocked 5.8", 64 GB - Black</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -255,7 +259,7 @@
                                                 <label class="custom-control-label" for="adfive"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img5.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img5.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Apple Macbook Pro 13 Inch with/without Touch Bar</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -280,7 +284,7 @@
                                                 <label class="custom-control-label" for="adsix"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img6.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img6.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Apple MQDT2CL/A 10.5-Inch 64GB Wi-Fi iPad Pro</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -304,7 +308,7 @@
                                                 <label class="custom-control-label" for="adseven"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img7.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img7.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Essential Phone 8GB Unlocked with Dual Camera</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -329,7 +333,7 @@
                                                 <label class="custom-control-label" for="adeight"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img8.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img8.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>LG Nexus 5x LG-H791 32GB GSM Smartphone</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -356,7 +360,7 @@
                                                 <label class="custom-control-label" for="adnine"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img9.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img9.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Samsung Galaxy G550T On5 GSM Unlocked Smartphone</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
@@ -381,7 +385,7 @@
                                                 <label class="custom-control-label" for="adten"></label>
                                             </div>
                                         </td>
-                                        <td class="photo"><img class="img-fluid" src="assets/img/product/img10.jpg" alt=""></td>
+                                        <td class="photo"><img class="img-fluid" src="~/content/mainproject/assets/img/product/img10.jpg" alt=""></td>
                                         <td data-title="Title">
                                             <h3>Apple iMac Pro 27" All-in-One Desktop, Space Gray</h3>
                                             <span>Ad ID: ng3D5hAMHPajQrM</span>
