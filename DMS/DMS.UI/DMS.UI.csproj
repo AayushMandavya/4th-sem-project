@@ -307,6 +307,7 @@
     <Compile Include="Controllers\Base\BaseControllerV1Controller.cs" />
     <Compile Include="Controllers\Base\_BaseAuthenticatedController.cs" />
     <Compile Include="Controllers\Base\BaseController.cs" />
+    <Compile Include="Controllers\Main\AdminController.cs" />
     <Compile Include="Controllers\Main\ConfigurationController.cs" />
     <Compile Include="Controllers\Main\JavaScriptController.cs" />
     <Compile Include="Controllers\Main\RolePermissionController.cs" />
@@ -1392,6 +1393,8 @@
     <Content Include="Views\Home\services.cshtml" />
     <Content Include="Views\Home\singlepost.cshtml" />
     <Content Include="Views\Home\testimonial.cshtml" />
+    <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Admin\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

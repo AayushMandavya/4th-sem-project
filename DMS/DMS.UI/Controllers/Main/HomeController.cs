@@ -72,10 +72,6 @@ namespace DMS.Controllers
             return View();
         }
        
-        public ActionResult dashboard()
-        {
-            return View();
-        }
         public ActionResult faq()
         {
             return View();
