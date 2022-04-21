@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>NexusPlus - Classified Ads and Listing Template</title>
+    <title>Nepali Online Shopping Brand</title>
 
     <link rel="stylesheet" type="text/css" href="~/content/mainproject/assets/css/bootstrap.min.css">
 
@@ -48,8 +48,8 @@
                             <a class="google" href="#"><i class="lni-google-plus"></i></a>
                         </div>
                         <div class="header-top-right float-right">
-                            <a href="login.html" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
-                            <a href="register.html" class="header-top-button"><i class="lni-pencil"></i> Register</a>
+                            <a href="@Url.Action("login","Home")" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
+                            <a href="@Url.Action("register","Home")" class="header-top-button"><i class="lni-pencil"></i> Register</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                         </li>
                     </ul>
                     <div class="post-btn">
-                        <a class="btn btn-common" href="post-ads.html"><i class="lni-pencil-alt"></i> Post an Ad</a>
+                        <a class="btn btn-common" href="@Url.Action("postads","Home")"><i class="lni-pencil-alt"></i> Post an Ad</a>
                     </div>
                 </div>
             </div>
