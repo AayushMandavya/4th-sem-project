@@ -222,6 +222,14 @@
     <Compile Include="Migrations\202204161930441_added_required_cfg01_values.Designer.cs">
       <DependentUpon>202204161930441_added_required_cfg01_values.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202204210227120_added_new_table_myads.cs" />
+    <Compile Include="Migrations\202204210227120_added_new_table_myads.Designer.cs">
+      <DependentUpon>202204210227120_added_new_table_myads.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202204210256537_added_new_table_users.cs" />
+    <Compile Include="Migrations\202204210256537_added_new_table_users.Designer.cs">
+      <DependentUpon>202204210256537_added_new_table_users.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -327,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202204161930441_added_required_cfg01_values.resx">
       <DependentUpon>202204161930441_added_required_cfg01_values.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204210227120_added_new_table_myads.resx">
+      <DependentUpon>202204210227120_added_new_table_myads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202204210256537_added_new_table_users.resx">
+      <DependentUpon>202204210256537_added_new_table_users.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
