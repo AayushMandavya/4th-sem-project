@@ -11,7 +11,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>NexusPlus - Classified Ads and Listing Template</title>
+    <title>Nepali Online Shopping Brand</title>
 
     <link rel="stylesheet" type="text/css" href="~/content/mainproject/assets/css/bootstrap.min.css">
 
@@ -53,8 +53,8 @@
                             <a class="google" href="#"><i class="lni-google-plus"></i></a>
                         </div>
                         <div class="header-top-right float-right">
-                            <a href="login.html" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
-                            <a href="register.html" class="header-top-button"><i class="lni-pencil"></i> Register</a>
+                            <a href="@Url.Action("login","Home")" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
+                            <a href="@Url.Action("register","Home")" class="header-top-button"><i class="lni-pencil"></i> Register</a>
                         </div>
                     </div>
                 </div>
@@ -87,15 +87,10 @@
                                 Categories
                             </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Listings
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("adlistinglist","Home")">
+                                Ads
                             </a>
-                            <div class="dropdown-menu">
-
-                                <a class="dropdown-item" href="@Url.Action("adlistinglist","Home")">Ad Listing</a>
-                                <a class="dropdown-item" href="@Url.Action("adsdetails","Home")">Listing Detail</a>
-                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -104,8 +99,8 @@
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="@Url.Action("About","Home")">About Us</a>
                                 <a class="dropdown-item" href="@Url.Action("services","Home")">Services</a>
-                                <a class="dropdown-item" href="@Url.Action("adsdetails","Home")">Ads Details</a>
-                                <a class="dropdown-item" href="@Url.Action("postads","Home")">Ads Post</a>
+                                
+                                
                                 <a class="dropdown-item" href="@Url.Action("pricing","Home")">Packages</a>
                                 <a class="dropdown-item" href="@Url.Action("testimonial","Home")">Testimonial</a>
                                 <a class="dropdown-item" href="@Url.Action("faq","Home")">FAQ</a>
@@ -125,58 +120,45 @@
                         </li>
                     </ul>
                     <div class="post-btn">
-                        <a class="btn btn-common" href="post-ads.html"><i class="lni-pencil-alt"></i> Post an Ad</a>
+                        <a class="btn btn-common" href="@Url.Action("postads","Home")"><i class="lni-pencil-alt"></i> Post an Ad</a>
                     </div>
                 </div>
             </div>
 
             <ul class="mobile-menu">
                 <li>
-                    <a class="active" href="#">
+                    <a class="active" href="@Url.Action("index","Home")">
                         Home
                     </a>
-                    <ul class="dropdown">
-                        <li><a class="active" href="index-2.html">Home 1</a></li>
-                        <li><a href="index-3.html">Home 2</a></li>
-                    </ul>
+                    
                 </li>
                 <li>
-                    <a href="category.html">Categories</a>
+                    <a href="@Url.Action("category","Home")">Categories</a>
                 </li>
                 <li>
-                    <a href="#">
-                        Listings
+                    <a href="@Url.Action("adlistinglist","Home")">
+                        Ads
                     </a>
-                    <ul class="dropdown">
-                        <li><a href="adlistinggrid.html">Ad Grid</a></li>
-                        <li><a href="adlistinglist.html">Ad Listing</a></li>
-                        <li><a href="ads-details.html">Listing Detail</a></li>
-                    </ul>
+                    
                 </li>
                 <li>
                     <a href="#">Pages</a>
                     <ul class="dropdown">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="ads-details.html">Ads Details</a></li>
-                        <li><a href="post-ads.html">Ads Post</a></li>
-                        <li><a href="pricing.html">Packages</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="404.html">404</a></li>
+                        <li><a href="@Url.Action("about","Home")">About Us</a></li>
+                        <li><a href="@Url.Action("services","Home")">Services</a></li>
+                        
+                        
+                        <li><a href="@Url.Action("testimonial","Home")">Testimonial</a></li>
+                        <li><a href="@Url.Action("faq","Home")">FAQ</a></li>
+                        
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
-                    <ul class="dropdown">
-                        <li><a href="blog.html">Blog - Right Sidebar</a></li>
-                        <li><a href="blog-left-sidebar.html">Blog - Left Sidebar</a></li>
-                        <li><a href="blog-grid-full-width.html"> Blog full width </a></li>
-                        <li><a href="single-post.html">Blog Details</a></li>
-                    </ul>
+                    <a href="@Url.Action("blog","Home")">Blog</a>
+                   
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="@Url.Action("contact","Home")">Contact Us</a>
                 </li>
             </ul>
 
@@ -221,16 +203,12 @@
                         <div class="widget">
                             <h3 class="block-title">Quick Link</h3>
                             <ul class="menu">
-                                <li><a href="#">- About Us</a></li>
-                                <li><a href="#">- Blog</a></li>
-                                <li><a href="#">- Events</a></li>
-                                <li><a href="#">- Shop</a></li>
-                                <li><a href="#">- FAQ's</a></li>
-                                <li><a href="#">- About Us</a></li>
-                                <li><a href="#">- Blog</a></li>
-                                <li><a href="#">- Events</a></li>
-                                <li><a href="#">- Shop</a></li>
-                                <li><a href="#">- FAQ's</a></li>
+                                <li><a href="@Url.Action("about","Home")">- About Us</a></li>
+                                <li><a href="@Url.Action("blog","Home")">- Blog</a></li>
+                                <li><a href="@Url.Action("events","Home")">- Events</a></li>
+                                <li><a href="@Url.Action("adlisitnglist","Home")">- Shop</a></li>
+                                <li><a href="@Url.Action("faq","Home")">- FAQ's</a></li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -260,7 +238,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="site-info text-center">
-                            <p><a target="_blank" href="https://templateshub.net">Templates Hub</a></p>
+                            <p><a target="_blank" href="https://templateshub.net">Aayush Sohan Bijay Nayan</a></p>
                         </div>
                     </div>
                 </div>
