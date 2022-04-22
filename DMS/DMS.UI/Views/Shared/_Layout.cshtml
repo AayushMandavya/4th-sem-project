@@ -41,11 +41,11 @@
                     </div>
                     <div class="col-lg-5 col-md-7 col-xs-12">
                         <div class="roof-social float-right">
-                            <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                            <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                            <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
-                            <a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a>
-                            <a class="google" href="#"><i class="lni-google-plus"></i></a>
+                            <a class="facebook" href="http://www.facebook.com"><i class="lni-facebook-filled"></i></a>
+                            <a class="twitter" href="https://www.twitter.com"><i class="lni-twitter-filled"></i></a>
+                            <a class="instagram" href="https://www.instagram.com"><i class="lni-instagram-filled"></i></a>
+                            <a class="linkedin" href="https://www.linkedin.com"><i class="lni-linkedin-fill"></i></a>
+                            <a class="google" href="https://www.google.com"><i class="lni-google-plus"></i></a>
                         </div>
                         <div class="header-top-right float-right">
                             <a href="@Url.Action("login","Home")" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
@@ -130,34 +130,28 @@
                     <a class="active" href="@Url.Action("index","Home")">
                         Home
                     </a>
-                    <ul class="dropdown">
-                        <li><a class="active" href="index-2.html">Home 1</a></li>
-                        <li><a href="index-3.html">Home 2</a></li>
-                    </ul>
+                   
                 </li>
                 <li>
                     <a href="@Url.Action("category","Home")">Categories</a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="@Url.Action("adlistinglist","Home")">
                         Listings
                     </a>
-                    <ul class="dropdown">
-                        <li><a href="@Url.Action("adlistinglist","Home")">Ad Listing</a></li>
-                        <li><a href="@Url.Action("adsdetails","Home")">Listing Detail</a></li>
-                    </ul>
+                    
                 </li>
                 <li>
                     <a href="#">Pages</a>
                     <ul class="dropdown">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li><a href="@Url.Action("About","Home")">About Us</a></li>
+                        <li><a href="@Url.Action("services","Home")">Services</a></li>
                         
                        
-                        <li><a href="pricing.html">Packages</a></li>
-                        <li><a href="testimonial.html">Testimonial</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                        <li><a href="404.html">404</a></li>
+                        <li><a href="@Url.Action("adlistinglist","Home")">Packages</a></li>
+                        <li><a href="@Url.Action("testimonial","Home")">Testimonial</a></li>
+                        <li><a href="@Url.Action("faq","Home")">FAQ</a></li>
+                   
                     </ul>
                 </li>
                 <li>
@@ -165,7 +159,7 @@
                     
                 </li>
                 <li>
-                    <a href="contact.html">Contact Us</a>
+                    <a href="@Url.Action("Contact","Home")">Contact Us</a>
                 </li>
             </ul>
 
@@ -263,16 +257,16 @@
                         <div class="widget">
                             <h3 class="block-title">Quick Link</h3>
                             <ul class="menu">
-                                <li><a href="#">- About Us</a></li>
-                                <li><a href="#">- Blog</a></li>
-                                <li><a href="#">- Events</a></li>
-                                <li><a href="#">- Shop</a></li>
-                                <li><a href="#">- FAQ's</a></li>
-                                <li><a href="#">- About Us</a></li>
-                                <li><a href="#">- Blog</a></li>
-                                <li><a href="#">- Events</a></li>
-                                <li><a href="#">- Shop</a></li>
-                                <li><a href="#">- FAQ's</a></li>
+                                <li><a href="@Url.Action("About","Home")">- About Us</a></li>
+                                <li><a href="@Url.Action("blog","Home")">- Blog</a></li>
+                                <li><a href="@Url.Action("index","Home")">- Events</a></li>
+                                <li><a href="@Url.Action("category","Home")">- Shop</a></li>
+                                <li><a href="@Url.Action("faq","Home")">- FAQ's</a></li>
+                                <li><a href="@Url.Action("About","Home")">- About Us</a></li>
+                                <li><a href="@Url.Action("blog","Home")">- Blog</a></li>
+                                <li><a href="@Url.Action("index","Home")">- Events</a></li>
+                                <li><a href="@Url.Action("category","Home")">- Shop</a></li>
+                                <li><a href="@Url.Action("faq","Home")">- FAQ's</a></li>
                             </ul>
                         </div>
                     </div>
