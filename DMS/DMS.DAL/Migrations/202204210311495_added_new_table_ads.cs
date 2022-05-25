@@ -12,7 +12,8 @@ namespace DMS.DAL.Migrations
                 adsname varchar(50) not null,
                 adscategory varchar(50) not null,
                 adsprice nvarchar(20) not null,
-                adspic varbinary(max)
+                adspic_path nvarchar(255) not null,
+                adspic_name nvarchar(255) not null
                 );");
         }
         

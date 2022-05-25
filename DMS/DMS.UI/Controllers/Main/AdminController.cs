@@ -6,12 +6,13 @@ using System.Web.Mvc;
 
 namespace DMS.Controllers.Main
 {
+    
     public class AdminController : Controller
     {
         // GET: Admin
         public ActionResult Index()
         {
-            return View();
+            return PartialView();
         }
     }
 }

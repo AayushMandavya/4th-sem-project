@@ -1,54 +1,83 @@
-﻿<div class="page-header" style="background: url(assets/img/banner1.jpg);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-wrapper">
-                    <h2 class="product-title">Login</h2>
-                    <ol class="breadcrumb">
-                        <li><a href="index-2.html">Home /</a></li>
-                        <li class="current">Login</li>
-                    </ol>
+﻿@model DMS.Models.LoginViewModel
+@{
+    /**/
+
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(x => x.returnUrl)
+    <div class="login row">
+        <div class="main-login col-xs-12 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+            <!-- start: LOGIN BOX -->
+            <div class="row padBox">
+                <div class="col-sm-6">
+                    <div class="thumbnail">
+                        <img width="200px" src="@Url.Content("~/" + ViewHelper.TenantFile("Content/Images/logo.jpg"))" class="img-responsive" />
+                    </div>
                 </div>
+                <div class="col-sm-6">
+                    <div class="">
+                        <h3 align="center">
+                            Main Project
+                        </h3>
+                        <form class="form-login" action="index.html">
+                            @Html.Raw(FlashBag.showMessage())
+
+                            <fieldset>
+                                <div class="">
+                                    <div class="">
+                                        <span class="input-icon">
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @Id = "username", @placeholder = "User Name" } })
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <div class="">
+                                        <span class="input-icon">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @Id = "password", @placeholder = "Password" } })
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <button type="submit" class="btn btn-danger btn-block">
+                                                Login <i class="fa fa-arrow-circle-right"></i>
+                                            </button>
+                                            <br />
+                                            <a href="@Url.Action("ForgotPassword","Account")" class="forget_pass" target="">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <!-- start: COPYRIGHT -->
+                        <div class="copyright" style="color:black;">
+                            Copyright &copy; @DateTime.Now.Year @(ViewHelper.LoginCompanyName). All rights reserved.
+                        </div>
+                        <!-- end: COPYRIGHT -->
+                    </div>
+                </div>
+
             </div>
+            <!-- end: LOGIN BOX -->
+            <!-- start: FORGOT BOX -->
         </div>
+
+        <div id="bg_bottom_login" class="">
+
+        </div>
+
     </div>
-</div>
 
 
-<section class="login section-padding">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-5 col-md-12 col-xs-12">
-                <div class="login-form login-area">
-                    <h3>
-                        Login Now
-                    </h3>
-                    <form role="form" class="login-form">
-                        <div class="form-group">
-                            <div class="input-icon">
-                                <i class="lni-user"></i>
-                                <input type="text" id="sender-email" class="form-control" name="email" placeholder="Username">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-icon">
-                                <i class="lni-lock"></i>
-                                <input type="password" class="form-control" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group mb-3">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="checkedall">
-                                <label class="custom-control-label" for="checkedall">Keep me logged in</label>
-                            </div>
-                            <a class="forgetpassword" href="forgot-password.html">Forgot Password?</a>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-common log-btn">Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
+}
